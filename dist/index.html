@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Сервисный центр CPS</title>
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+  <div class="head-container">
+    <header class="header header__wrapper">
+      <button class="button header__btn-burger" type="button">
+        <span class="visually-hidden">Меню</span>
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="ic/burger">
+            <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+            <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M11 13C11 12.4477 11.4477 12 12 12H28C28.5523 12 29 12.4477 29 13C29 13.5523 28.5523 14 28 14H12C11.4477 14 11 13.5523 11 13ZM11 20C11 19.4477 11.4477 19 12 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H12C11.4477 21 11 20.5523 11 20ZM12 26C11.4477 26 11 26.4477 11 27C11 27.5523 11.4477 28 12 28H24C24.5523 28 25 27.5523 25 27C25 26.4477 24.5523 26 24 26H12Z" fill="white"/>
+          </g>
+        </svg>
+      </button>
+
+      <a class="logo header__logo-link" href="#">
+        <img class="header__logo-img" src="./img/Group.svg" alt="" width="96" height="51">
+      </a>
+
+      <ul class="header__contact">
+        <li class="header__contact-item">
+          <button class="button btn-call" type="button">
+            <span class="visually-hidden">Звонок</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7602 23.25L15.3002 22.96C15.9102 22.89 16.5102 23.1 16.9402 23.53L18.7802 25.37C21.6102 23.93 23.9302 21.62 25.3702 18.78L23.5202 16.93C23.0902 16.5 22.8802 15.9 22.9502 15.29L23.2402 12.77C23.3602 11.76 24.2102 11 25.2302 11H26.9602C28.0902 11 29.0302 11.94 28.9602 13.07C28.4302 21.61 21.6002 28.43 13.0702 28.96C11.9402 29.03 11.0002 28.09 11.0002 26.96V25.23C10.9902 24.22 11.7502 23.37 12.7602 23.25Z" fill="white"/>
+            </svg>
+          </button>
+        </li>
+        <li class="header__contact-item">
+          <button class="button btn-msg" type="button">
+            <span class="visually-hidden">Сообщение</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic/chat">
+                <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z" fill="white"/>
+                <mask id="mask0_0_1880" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="10" y="11" width="20" height="20">
+                  <path id="icon_2" fill-rule="evenodd" clip-rule="evenodd" d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_0_1880)"></g>
+              </g>
+            </svg>
+          </button>
+        </li>
+        <li class="header__contact-item">
+          <button class="button" type="button">
+            <span class="visually-hidden">Профиль</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic/profile">
+                <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                <g id="Group">
+                  <g id="Group 2">
+                    <path id="Oval" d="M20.5 19C22.9853 19 25 16.9853 25 14.5C25 12.0147 22.9853 10 20.5 10C18.0147 10 16 12.0147 16 14.5C16 16.9853 18.0147 19 20.5 19Z" fill="white"/>
+                    <path id="Path" d="M10.0166 26.6118C9.88693 27.3412 10.5352 28 11.339 28H28.6604C29.4902 28 30.1125 27.3412 29.9829 26.6118C29.2309 22.4 25.0561 20 19.9997 20C14.9433 20 10.7686 22.4 10.0166 26.6118Z" fill="white"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="header__service">
+        <li class="header__service-item">
+          <button class="button header__service-btn--space" type="button">
+            <span class="visually-hidden">Ремонт</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+              <path d="M18.2581 23.4583L18.6668 23.0494L16.95 21.3322L16.5412 21.7411L16.3368 21.5367C16.0098 21.1687 15.6828 20.9643 15.3558 21.0052C15.1105 21.0052 14.9061 21.1687 14.7426 21.414C14.4973 21.8229 14.62 22.2726 14.6608 22.5588C14.6608 22.6406 14.7017 22.6815 14.7017 22.7632C14.7017 22.8859 14.7017 23.0494 14.4156 23.0903C14.0068 23.213 13.4754 23.3356 12.944 23.6218C12.2082 24.0307 11.7176 24.3987 11.4315 24.7666C9.91902 26.7291 10.0008 28.4055 10.0008 28.4872C10.0008 28.6099 10.0417 28.6917 10.1234 28.7325L11.2271 29.8773C11.3089 29.9591 11.3906 30 11.4724 30C11.4724 30 11.5133 30 11.595 30C12.0038 30 13.4754 29.9182 15.1922 28.569C15.5601 28.2828 15.928 27.7922 16.3368 27.0562C16.623 26.5656 16.7865 26.0341 16.8682 25.5844C16.95 25.2982 17.0726 25.2982 17.1953 25.2982C17.2361 25.2982 17.3179 25.339 17.3996 25.339C17.5631 25.3799 17.7267 25.4208 17.931 25.4208C18.1354 25.4208 18.3398 25.3799 18.5442 25.2573C18.7895 25.0937 18.953 24.8893 18.9939 24.644C19.0347 24.3169 18.8712 23.9898 18.5033 23.7036L18.2581 23.4583Z" fill="white"/>
+              <path d="M26.884 14.8784L28.0188 14.326C28.0609 14.2835 28.1449 14.241 28.1869 14.1986L29.9101 11.8616C30.0362 11.6916 30.0362 11.4367 29.8681 11.3092L28.6913 10.1195C28.5652 9.99199 28.313 9.9495 28.1449 10.077L25.8333 11.8191C25.7913 11.8616 25.7493 11.9041 25.7072 11.989L25.1609 13.1363L21 17.2154L22.7652 19L26.884 14.8784Z" fill="white"/>
+              <path d="M27.8527 23.0448C26.8636 22.0036 25.4393 21.6288 24.0941 22.0036L17.6453 15.1733C17.7244 14.7985 17.764 14.4653 17.764 14.0905C17.764 13.0493 17.3683 12.0081 16.6166 11.2167C15.588 10.0923 14.045 9.71742 12.6207 10.2172C12.5416 10.2588 12.4229 10.3838 12.3833 10.5504C12.3833 10.6753 12.4229 10.8003 12.502 10.9252L14.4406 12.966C14.8758 13.4241 14.8758 14.2154 14.4406 14.6735C14.0054 15.1317 13.2537 15.1317 12.8185 14.6735L10.8799 12.6328C10.7612 12.5495 10.6425 12.5078 10.4843 12.5495C10.3656 12.5495 10.2469 12.6744 10.2073 12.7994C9.73256 14.2571 10.0886 15.8813 11.1173 16.9642C11.8294 17.7555 12.8581 18.172 13.8867 18.172C14.2032 18.172 14.5593 18.1303 14.8758 18.047L21.3642 24.8773C21.0082 26.2933 21.4038 27.7927 22.3533 28.8339C23.105 29.6252 24.0546 30 25.0832 30C25.5184 30 25.914 29.9167 26.3492 29.7918C26.4679 29.7501 26.5866 29.6252 26.6262 29.5002C26.6658 29.3753 26.6262 29.2087 26.5075 29.1254L24.5689 27.0846C24.3711 26.8764 24.2128 26.5432 24.2128 26.21C24.2128 25.8768 24.3315 25.5853 24.5689 25.3354C24.8063 25.0855 25.0832 24.9606 25.3997 24.9606C25.7162 24.9606 25.9932 25.0855 26.2306 25.3354L28.1692 27.3762C28.2879 27.4595 28.4065 27.5011 28.5252 27.5011C28.6439 27.4595 28.7626 27.3762 28.8022 27.2512C28.9209 26.8348 29 26.3766 29 25.9185C29 24.8356 28.6044 23.7944 27.8527 23.0448Z" fill="white"/>
+            </svg>
+          </button>
+        </li>
+        <li class="header__service-item">
+          <button class="button" type="button">
+            <span class="visually-hidden">Статус заказа</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C12 10.4477 12.4477 10 13 10H27C27.5523 10 28 10.4477 28 11V28.5C27.1716 28.5 26.5 29.1715 26.5 29.9999H25.5C25.5 29.1715 24.8284 28.5 24 28.5C23.1716 28.5 22.5 29.1715 22.5 29.9999H21.5C21.5 29.1715 20.8284 28.5 20 28.5C19.1716 28.5 18.5 29.1715 18.5 29.9999H17.5C17.5 29.1715 16.8284 28.5 16 28.5C15.1716 28.5 14.5 29.1715 14.5 29.9999H13.5C13.5 29.1715 12.8284 28.5 12 28.5V11ZM21.4163 21.7884C20.5536 22.3443 19.4703 22.5936 18.3296 22.3827C16.5274 22.0472 15.0895 20.5326 14.8595 18.7114C14.4952 15.8261 16.9492 13.4201 19.8538 13.8802C21.656 14.1677 23.1034 15.6439 23.4006 17.4365C23.5828 18.5484 23.3239 19.5741 22.7871 20.4272L24.896 22.5265C25.2699 22.9003 25.2699 23.5138 24.896 23.8876C24.5126 24.2711 23.8991 24.2711 23.5252 23.8972L21.4163 21.7884ZM16.7058 18.0588C16.7058 16.7599 17.7599 15.7058 19.0588 15.7058C20.3576 15.7058 21.4117 16.7599 21.4117 18.0588C21.4117 19.3576 20.3576 20.4117 19.0588 20.4117C17.7599 20.4117 16.7058 19.3576 16.7058 18.0588Z" fill="white"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <div class="main-header">
+          <h1 class="main-header__title">Услуги и сервисы</h1>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <button class="button main-header__button-1" type="button">
+                <span class="main-header__button-1--descr">Оставить заявку</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+                  <path d="M18.2581 23.4583L18.6668 23.0494L16.95 21.3322L16.5412 21.7411L16.3368 21.5367C16.0098 21.1687 15.6828 20.9643 15.3558 21.0052C15.1105 21.0052 14.9061 21.1687 14.7426 21.414C14.4973 21.8229 14.62 22.2726 14.6608 22.5588C14.6608 22.6406 14.7017 22.6815 14.7017 22.7632C14.7017 22.8859 14.7017 23.0494 14.4156 23.0903C14.0068 23.213 13.4754 23.3356 12.944 23.6218C12.2082 24.0307 11.7176 24.3987 11.4315 24.7666C9.91902 26.7291 10.0008 28.4055 10.0008 28.4872C10.0008 28.6099 10.0417 28.6917 10.1234 28.7325L11.2271 29.8773C11.3089 29.9591 11.3906 30 11.4724 30C11.4724 30 11.5133 30 11.595 30C12.0038 30 13.4754 29.9182 15.1922 28.569C15.5601 28.2828 15.928 27.7922 16.3368 27.0562C16.623 26.5656 16.7865 26.0341 16.8682 25.5844C16.95 25.2982 17.0726 25.2982 17.1953 25.2982C17.2361 25.2982 17.3179 25.339 17.3996 25.339C17.5631 25.3799 17.7267 25.4208 17.931 25.4208C18.1354 25.4208 18.3398 25.3799 18.5442 25.2573C18.7895 25.0937 18.953 24.8893 18.9939 24.644C19.0347 24.3169 18.8712 23.9898 18.5033 23.7036L18.2581 23.4583Z" fill="white"/>
+                  <path d="M26.884 14.8784L28.0188 14.326C28.0609 14.2835 28.1449 14.241 28.1869 14.1986L29.9101 11.8616C30.0362 11.6916 30.0362 11.4367 29.8681 11.3092L28.6913 10.1195C28.5652 9.99199 28.313 9.9495 28.1449 10.077L25.8333 11.8191C25.7913 11.8616 25.7493 11.9041 25.7072 11.989L25.1609 13.1363L21 17.2154L22.7652 19L26.884 14.8784Z" fill="white"/>
+                  <path d="M27.8527 23.0448C26.8636 22.0036 25.4393 21.6288 24.0941 22.0036L17.6453 15.1733C17.7244 14.7985 17.764 14.4653 17.764 14.0905C17.764 13.0493 17.3683 12.0081 16.6166 11.2167C15.588 10.0923 14.045 9.71742 12.6207 10.2172C12.5416 10.2588 12.4229 10.3838 12.3833 10.5504C12.3833 10.6753 12.4229 10.8003 12.502 10.9252L14.4406 12.966C14.8758 13.4241 14.8758 14.2154 14.4406 14.6735C14.0054 15.1317 13.2537 15.1317 12.8185 14.6735L10.8799 12.6328C10.7612 12.5495 10.6425 12.5078 10.4843 12.5495C10.3656 12.5495 10.2469 12.6744 10.2073 12.7994C9.73256 14.2571 10.0886 15.8813 11.1173 16.9642C11.8294 17.7555 12.8581 18.172 13.8867 18.172C14.2032 18.172 14.5593 18.1303 14.8758 18.047L21.3642 24.8773C21.0082 26.2933 21.4038 27.7927 22.3533 28.8339C23.105 29.6252 24.0546 30 25.0832 30C25.5184 30 25.914 29.9167 26.3492 29.7918C26.4679 29.7501 26.5866 29.6252 26.6262 29.5002C26.6658 29.3753 26.6262 29.2087 26.5075 29.1254L24.5689 27.0846C24.3711 26.8764 24.2128 26.5432 24.2128 26.21C24.2128 25.8768 24.3315 25.5853 24.5689 25.3354C24.8063 25.0855 25.0832 24.9606 25.3997 24.9606C25.7162 24.9606 25.9932 25.0855 26.2306 25.3354L28.1692 27.3762C28.2879 27.4595 28.4065 27.5011 28.5252 27.5011C28.6439 27.4595 28.7626 27.3762 28.8022 27.2512C28.9209 26.8348 29 26.3766 29 25.9185C29 24.8356 28.6044 23.7944 27.8527 23.0448Z" fill="white"/>
+                </svg>
+              </button>
+            </li>
+            <li class="main-header__item">
+              <button class="button main-header__button-2" type="button">
+                <span class="main-header__button-2--descr">Статус ремонта</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C12 10.4477 12.4477 10 13 10H27C27.5523 10 28 10.4477 28 11V28.5C27.1716 28.5 26.5 29.1715 26.5 29.9999H25.5C25.5 29.1715 24.8284 28.5 24 28.5C23.1716 28.5 22.5 29.1715 22.5 29.9999H21.5C21.5 29.1715 20.8284 28.5 20 28.5C19.1716 28.5 18.5 29.1715 18.5 29.9999H17.5C17.5 29.1715 16.8284 28.5 16 28.5C15.1716 28.5 14.5 29.1715 14.5 29.9999H13.5C13.5 29.1715 12.8284 28.5 12 28.5V11ZM21.4163 21.7884C20.5536 22.3443 19.4703 22.5936 18.3296 22.3827C16.5274 22.0472 15.0895 20.5326 14.8595 18.7114C14.4952 15.8261 16.9492 13.4201 19.8538 13.8802C21.656 14.1677 23.1034 15.6439 23.4006 17.4365C23.5828 18.5484 23.3239 19.5741 22.7871 20.4272L24.896 22.5265C25.2699 22.9003 25.2699 23.5138 24.896 23.8876C24.5126 24.2711 23.8991 24.2711 23.5252 23.8972L21.4163 21.7884ZM16.7058 18.0588C16.7058 16.7599 17.7599 15.7058 19.0588 15.7058C20.3576 15.7058 21.4117 16.7599 21.4117 18.0588C21.4117 19.3576 20.3576 20.4117 19.0588 20.4117C17.7599 20.4117 16.7058 19.3576 16.7058 18.0588Z" fill="white"/>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--active">Ремонтируемые устройства</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Ремонтируемые бренды</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Дополнительные услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Цены на услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Специальные цены</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Адреса сервисных центров</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="about">
+          <div class="about__wrapper">
+            <div class="about__text">
+              <p class="about__text-1">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <br>
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким. <br>
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+
+              <button class="button about-btn" type="button">
+                <span class="about__btn--descr">Читать далее</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="ic/expand">
+                    <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M14.5001 7.50008L12.0001 10.0001L9.50008 7.50008C9.22393 7.22393 8.77622 7.22393 8.50008 7.50008C8.22393 7.77622 8.22393 8.22393 8.50008 8.50008L11.293 11.293C11.6835 11.6835 12.3167 11.6835 12.7072 11.293L15.5001 8.50008C15.7762 8.22393 15.7762 7.77622 15.5001 7.50008C15.2239 7.22393 14.7762 7.22393 14.5001 7.50008ZM14.5001 13.5001L12.0001 16.0001L9.50008 13.5001C9.22393 13.2239 8.77622 13.2239 8.50008 13.5001C8.22393 13.7762 8.22393 14.2239 8.50008 14.5001L11.293 17.293C11.6835 17.6835 12.3167 17.6835 12.7072 17.293L15.5001 14.5001C15.7762 14.2239 15.7762 13.7762 15.5001 13.5001C15.2239 13.2239 14.7762 13.2239 14.5001 13.5001Z" fill="#41F6D7"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+
+
+            <img class="about__img" src="./img/num1.png" alt="">
+          </div>
+        </section>
+      </div>
+      <section class="brands-slider">
+        <h2 class="brands-slider__header --container">
+          Ремонт техники различных брендов
+        </h2>
+        <div class="brands-slider swiper --container">
+          <ul class="brands-slider__list swiper-wrapper">
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link">
+                <img src="./img/lenovo.svg" alt="" class="brands-slider__logo">
+                <img src="./img/ic_go.svg" alt="" class="brands-slider__ico">
+              </a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/samsung.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/apple.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/viewsonic.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/bosch.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/hp.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/acer.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/sony.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/lenovo.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/samsung.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+            <li class="brands-slider__item swiper-slide">
+              <a href="#" class="brands-slider__link"><img src="./img/apple.svg" alt="" class="brands-slider__logo"><img src="./img/ic_go.svg" alt="" class="brands-slider__ico"></a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+
+          <button class="button brands-slider__btn brands-slider__more--open" type="button">
+            <span class="brands-slider__more--descr">Показать все</span>
+            <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <path id="icon" d="M12 10L14.5 7.5C14.7761 7.22388 15.2239 7.22388 15.5 7.5C15.7761 7.77612 15.7761 8.22388 15.5 8.5L12.7073 11.293C12.3167 11.6836 11.6836 11.6836 11.293 11.293L8.5 8.5C8.22388 8.22388 8.22388 7.77612 8.5 7.5C8.77612 7.22388 9.22388 7.22388 9.5 7.5L12 10ZM14.5 13.5L12 16L9.5 13.5C9.22388 13.2239 8.77612 13.2239 8.5 13.5C8.22388 13.7761 8.22388 14.2239 8.5 14.5L11.293 17.293C11.6836 17.6836 12.3167 17.6836 12.7073 17.293L15.5 14.5C15.7761 14.2239 15.7761 13.7761 15.5 13.5C15.2239 13.2239 14.7761 13.2239 14.5 13.5Z" clip-rule="evenodd" fill="#41F6D7" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+          <button class="button brands-slider__btn brands-slider__more--close brands-slider__more--hidden" type="button">
+            <span class="brands-slider__more--descr">Скрыть</span>
+            <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <path id="icon" d="M12 14L9.5 16.5C9.22388 16.7761 8.77612 16.7761 8.5 16.5C8.22388 16.2239 8.22388 15.7761 8.5 15.5L11.2927 12.707C11.6833 12.3164 12.3164 12.3164 12.707 12.707L15.5 15.5C15.7761 15.7761 15.7761 16.2239 15.5 16.5C15.2239 16.7761 14.7761 16.7761 14.5 16.5L12 14ZM9.5 10.5L12 8L14.5 10.5C14.7761 10.7761 15.2239 10.7761 15.5 10.5C15.7761 10.2239 15.7761 9.77612 15.5 9.5L12.707 6.70703C12.3164 6.31641 11.6833 6.31641 11.2927 6.70703L8.5 9.5C8.22388 9.77612 8.22388 10.2239 8.5 10.5C8.77612 10.7761 9.22388 10.7761 9.5 10.5Z" clip-rule="evenodd" fill="#41F6D7" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="technic-slider">
+        <h2 class="technic-slider__header --container">
+          Ремонт различных видов техники
+        </h2>
+        <div class="technic-slider swiper --container">
+          <ul class="technic-slider__list swiper-wrapper">
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт ноутбуков</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт планшетов</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт ПК</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт мониторов</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт часов</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт смартфонов</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт мышек</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт обуви</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+            <li class="technic-slider__item swiper-slide">
+              <a href="#" class="technic-slider__link">
+                <h3 class="technic-slider__name">Ремонт флешек</h3>
+                <img src="./img/ic_go.svg" alt="" class="technic-slider__ico">
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <button class="button technic-slider__btn technic-slider__more--open" type="button">
+            <span class="technic-slider__more--descr">Показать все</span>
+            <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <path id="icon" d="M12 10L14.5 7.5C14.7761 7.22388 15.2239 7.22388 15.5 7.5C15.7761 7.77612 15.7761 8.22388 15.5 8.5L12.7073 11.293C12.3167 11.6836 11.6836 11.6836 11.293 11.293L8.5 8.5C8.22388 8.22388 8.22388 7.77612 8.5 7.5C8.77612 7.22388 9.22388 7.22388 9.5 7.5L12 10ZM14.5 13.5L12 16L9.5 13.5C9.22388 13.2239 8.77612 13.2239 8.5 13.5C8.22388 13.7761 8.22388 14.2239 8.5 14.5L11.293 17.293C11.6836 17.6836 12.3167 17.6836 12.7073 17.293L15.5 14.5C15.7761 14.2239 15.7761 13.7761 15.5 13.5C15.2239 13.2239 14.7761 13.2239 14.5 13.5Z" clip-rule="evenodd" fill="#41F6D7" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+          <button class="button technic-slider__btn technic-slider__more--close technic-slider__more--hidden" type="button">
+            <span class="technic-slider__more--descr">Скрыть</span>
+            <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <path id="icon" d="M12 14L9.5 16.5C9.22388 16.7761 8.77612 16.7761 8.5 16.5C8.22388 16.2239 8.22388 15.7761 8.5 15.5L11.2927 12.707C11.6833 12.3164 12.3164 12.3164 12.707 12.707L15.5 15.5C15.7761 15.7761 15.7761 16.2239 15.5 16.5C15.2239 16.7761 14.7761 16.7761 14.5 16.5L12 14ZM9.5 10.5L12 8L14.5 10.5C14.7761 10.7761 15.2239 10.7761 15.5 10.5C15.7761 10.2239 15.7761 9.77612 15.5 9.5L12.707 6.70703C12.3164 6.31641 11.6833 6.31641 11.2927 6.70703L8.5 9.5C8.22388 9.77612 8.22388 10.2239 8.5 10.5C8.77612 10.7761 9.22388 10.7761 9.5 10.5Z" clip-rule="evenodd" fill="#41F6D7" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="price-slider">
+        <h2 class="price-slider__header --container">Цены на услуги</h2>
+        <div class="price-slider__title">
+          <h3 class="price-slider__th">Ремонтные услуги</h3>
+          <h3 class="price-slider__th">Цена</h3>
+          <h3 class="price-slider__th">Срок</h3>
+          <h3 class="price-slider__th"></h3>
+        </div>
+        <div class="price-slider swiper --container">
+          <ul class="price-slider__list swiper-wrapper">
+            <li class="price-slider__item swiper-slide">
+              <div class="price-slider__service">
+                <h3 class="price-slider__name">Ремонтные услуги</h3>
+                <h3 class="price-slider__text">
+                  Тестирование с выдачей технического заключения
+                </h3>
+              </div>
+              <div class="price-slider__cost">
+                <h3 class="price-slider__name">Цена</h3>
+                <h3 class="price-slider__text">Бесплатно</h3>
+              </div>
+              <div class="price-slider__duration">
+                <h3 class="price-slider__name">Срок</h3>
+                <h3 class="price-slider__text">30-120 мин</h3>
+              </div>
+              <button class="button price-slider__btn" type="button">
+                <span class="price-slider__btn-descr">ЗАКАЗАТЬ</span>
+                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs/>
+                  <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+                  <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+
+            <li class="price-slider__item swiper-slide">
+              <div class="price-slider__service">
+                <h3 class="price-slider__name">Ремонтные услуги</h3>
+                <h3 class="price-slider__text">Диагностика</h3>
+              </div>
+              <div class="price-slider__cost">
+                <h3 class="price-slider__name">Цена</h3>
+                <h3 class="price-slider__text">Бесплатно</h3>
+              </div>
+              <div class="price-slider__duration">
+                <h3 class="price-slider__name">Срок</h3>
+                <h3 class="price-slider__text">30 мин</h3>
+              </div>
+              <button class="button price-slider__btn" type="button">
+                <span class="price-slider__btn-descr">ЗАКАЗАТЬ</span>
+                <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs/>
+                  <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+                  <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+            <li class="price-slider__item swiper-slide">
+              <div class="price-slider__service">
+                <h3 class="price-slider__name">Ремонтные услуги</h3>
+                <h3 class="price-slider__text">Замена дисплея</h3>
+              </div>
+              <div class="price-slider__cost">
+                <h3 class="price-slider__name">Цена</h3>
+                <h3 class="price-slider__text">1 000 ₽</h3>
+              </div>
+              <div class="price-slider__duration">
+                <h3 class="price-slider__name">Срок</h3>
+                <h3 class="price-slider__text">30-120 мин</h3>
+              </div>
+              <button class="button price-slider__btn" type="button">
+                <span class="price-slider__btn-descr">ЗАКАЗАТЬ</span>
+                <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs/>
+                  <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+                  <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+            <li class="price-slider__item swiper-slide">
+              <div class="price-slider__service">
+                <h3 class="price-slider__name">Ремонтные услуги</h3>
+                <h3 class="price-slider__text">
+                  Замена полифонического динамика
+                </h3>
+              </div>
+              <div class="price-slider__cost">
+                <h3 class="price-slider__name">Цена</h3>
+                <h3 class="price-slider__text">1 000 ₽</h3>
+              </div>
+              <div class="price-slider__duration">
+                <h3 class="price-slider__name">Срок</h3>
+                <h3 class="price-slider__text">30-120 мин</h3>
+              </div>
+              <button class="button price-slider__btn" type="button">
+                <span class="price-slider__btn-descr">ЗАКАЗАТЬ</span>
+                <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs/>
+                  <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+                  <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+            <li class="price-slider__item swiper-slide">
+              <div class="price-slider__service">
+                <h3 class="price-slider__name">Ремонтные услуги</h3>
+                <h3 class="price-slider__text">
+                  Замена программного обеспечения
+                </h3>
+              </div>
+              <div class="price-slider__cost">
+                <h3 class="price-slider__name">Цена</h3>
+                <h3 class="price-slider__text">1 000 ₽</h3>
+              </div>
+              <div class="price-slider__duration">
+                <h3 class="price-slider__name">Срок</h3>
+                <h3 class="price-slider__text">30-120 мин</h3>
+              </div>
+              <button class="button price-slider__btn" type="button">
+                <span class="price-slider__btn-descr">ЗАКАЗАТЬ</span>
+                <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with Pixso.</desc>
+                  <defs/>
+                  <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+                  <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <p class="price-slider__ps">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <a href="#" class="price-slider__offer">
+            Получить коммерческое предложение
+            <svg class="price-slider__arrow" width="24.000000" height="27.490967" viewBox="0 0 24 27.491" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <path id="Line" d="M9.1626 18.9111L9.29443 19.064C9.69336 19.5256 10.4092 19.5256 10.8076 19.064L14.8374 14.3992C15.1616 14.0237 15.1616 13.4673 14.8374 13.0918L10.8076 8.427C10.4092 7.96533 9.69336 7.96533 9.29443 8.427L9.1626 8.57959C8.83838 8.95508 8.83838 9.51147 9.1626 9.88696L12.4956 13.7454L9.1626 17.6038C8.83838 17.9792 8.83838 18.5359 9.1626 18.9111Z" fill="#FF3E79" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <h3 class="footer__copyright">
+          © 2019 CPS<br>Разработано командой Apesong
+        </h3>
+        <a href="#" class="footer__politic">Политика конфиденциальности</a>
+        <h3 class="footer__info">
+          Информация, размещенная на данной странице, не является публичной
+          офертой
+        </h3>
+      </div>
+    </footer>
+  </div>
+
+  <div class="burger-menu">
+    <div class="burger-menu__frame">
+      <div class="burger-menu__wrapper">
+        <div class="burger-menu__header">
+          <button class="button burger-menu__btn-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z" fill="white"/>
+            </svg>
+          </button>
+
+          <a class="logo burger-menu__logo-link" href="#">
+            <img class="burger-menu__logo-img" src="./img/Group.svg" alt="" width="96" height="51">
+          </a>
+
+          <button class="button burger-menu__btn-search" type="button">
+            <span class="visually-hidden">Поиск</span>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic/search">
+                <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M23.5006 22.0006H22.7106L22.4306 21.7306C23.6306 20.3306 24.2506 18.4206 23.9106 16.3906C23.4406 13.6106 21.1206 11.3906 18.3206 11.0506C14.0906 10.5306 10.5306 14.0906 11.0506 18.3206C11.3906 21.1206 13.6106 23.4406 16.3906 23.9106C18.4206 24.2506 20.3306 23.6306 21.7306 22.4306L22.0006 22.7106V23.5006L26.2606 27.7506C26.6706 28.1606 27.3306 28.1606 27.7406 27.7506L27.7506 27.7406C28.1606 27.3306 28.1606 26.6706 27.7506 26.2606L23.5006 22.0006ZM17.5006 22.0006C15.0106 22.0006 13.0006 19.9906 13.0006 17.5006C13.0006 15.0106 15.0106 13.0006 17.5006 13.0006C19.9906 13.0006 22.0006 15.0106 22.0006 17.5006C22.0006 19.9906 19.9906 22.0006 17.5006 22.0006Z" fill="white"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <nav class="burger-menu__navigation">
+          <ul class="nav-list burger-menu__nav-list">
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link burger-menu__nav-link--active">Ремонт техники</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Услуги и сервисы</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Корпоративным клиентам</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Продавцам техники</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Партнерам</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Производителям</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Наши сервисные центры</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a href="#" class="burger-menu__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu__footer">
+          <ul class="contact-list burger-menu__contact-list">
+            <li class="burger-menu__contact-item">
+              <button class="button btn-call" type="button">
+                <span class="visually-hidden">Звонок</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7602 23.25L15.3002 22.96C15.9102 22.89 16.5102 23.1 16.9402 23.53L18.7802 25.37C21.6102 23.93 23.9302 21.62 25.3702 18.78L23.5202 16.93C23.0902 16.5 22.8802 15.9 22.9502 15.29L23.2402 12.77C23.3602 11.76 24.2102 11 25.2302 11H26.9602C28.0902 11 29.0302 11.94 28.9602 13.07C28.4302 21.61 21.6002 28.43 13.0702 28.96C11.9402 29.03 11.0002 28.09 11.0002 26.96V25.23C10.9902 24.22 11.7502 23.37 12.7602 23.25Z" fill="white"/>
+                </svg>
+              </button>
+            </li>
+            <li class="burger-menu__contact-item">
+              <button class="button btn-msg" type="button">
+                <span class="visually-hidden">Сообщение</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="ic/chat">
+                    <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                    <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z" fill="white"/>
+                    <mask id="mask0_0_1880" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="10" y="11" width="20" height="20">
+                      <path id="icon_2" fill-rule="evenodd" clip-rule="evenodd" d="M28 11H12C10.9 11 10.01 11.9 10.01 13L10 31L14 26H28C29.1 26 30 25.1 30 24V13C30 11.9 29.1 11 28 11ZM21 22H15C14.45 22 14 21.55 14 21C14 20.45 14.45 20 15 20H21C21.55 20 22 20.45 22 21C22 21.55 21.55 22 21 22ZM25 17H15C14.45 17 14 16.55 14 16C14 15.45 14.45 15 15 15H25C25.55 15 26 15.45 26 16C26 16.55 25.55 17 25 17Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_0_1880)"></g>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li class="burger-menu__contact-item">
+              <button class="button" type="button">
+                <span class="visually-hidden">Профиль</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="ic/profile">
+                    <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                    <g id="Group">
+                      <g id="Group 2">
+                        <path id="Oval" d="M20.5 19C22.9853 19 25 16.9853 25 14.5C25 12.0147 22.9853 10 20.5 10C18.0147 10 16 12.0147 16 14.5C16 16.9853 18.0147 19 20.5 19Z" fill="white"/>
+                        <path id="Path" d="M10.0166 26.6118C9.88693 27.3412 10.5352 28 11.339 28H28.6604C29.4902 28 30.1125 27.3412 29.9829 26.6118C29.2309 22.4 25.0561 20 19.9997 20C14.9433 20 10.7686 22.4 10.0166 26.6118Z" fill="white"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <a class="burger-menu__mail" href="#">mail@cps.com</a>
+          <a class="burger-menu__phone" href="#">8 800 890 8900</a>
+          <ul class="burger-menu__lang-list">
+            <li class="burger-menu__lang-item">
+              <a class="burger-menu__lang-link burger-menu__lang-link--active" href="">RU</a>
+            </li>
+            <li class="burger-menu__lang-item">
+              <a class="burger-menu__lang-link" href="">EN</a>
+            </li>
+            <li class="burger-menu__lang-item">
+              <a class="burger-menu__lang-link" href="">CH</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="burger-menu__bg"></div>
+  </div>
+
+  <div class="modal-feedback">
+    <div class="modal-feedback__frame">
+      <div class="modal-feedback__wrapper">
+        <button class="button modal-feedback__btn-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z" fill="white"/>
+          </svg>
+        </button>
+        <h1 class="modal-feedback__title">Обратная связь</h1>
+        <form class="modal-feedback__form" action="#" method="post">
+          <input class="modal-feedback__input" placeholder="Имя" type="text">
+          <input class="modal-feedback__input" placeholder="Телефон" type="tel">
+          <input class="modal-feedback__input" placeholder="Электронная почта" type="email">
+          <textarea class="modal-feedback__input modal-feedback__textarea" placeholder="Сообщение"></textarea>
+          <p class="modal-feedback__text">
+            Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с
+            нашей
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+          <button class="button modal-feedback__btn-send" type="submit">
+            <span class="modal-feedback__btn-descr">Отправить</span>
+            <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+              <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-feedback__bg"></div>
+  </div>
+
+  <div class="modal-call">
+    <div class="modal-call__frame">
+      <div class="modal-call__wrapper">
+        <button class="button modal-call__btn-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="20" fill="#FF3E79"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z" fill="white"/>
+          </svg>
+        </button>
+        <h1 class="modal-call__title">Заказать звонок</h1>
+        <form class="modal-call__form" action="#" method="post">
+          <input class="modal-call__input" placeholder="Телефон" type="text">
+          <p class="modal-call__text">
+            Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с
+            нашей
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+          <button class="button modal-call__btn-send" type="submit">
+            <span class="modal-call__btn-descr">Отправить</span>
+            <svg class="price-btn__arrow" width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>Created with Pixso.</desc>
+              <defs/>
+              <rect id="back" rx="12.000000" width="24.000000" height="24.000000" fill="#FF3E79" fill-opacity="1.000000"/>
+              <path id="dropdown" d="M12.8 12L9.7915 9.229C9.36401 8.83521 9.36108 8.16138 9.78516 7.76392L9.92041 7.63721C10.3032 7.27808 10.8984 7.27637 11.2837 7.63306L15.2075 11.2661C15.635 11.6619 15.635 12.3379 15.2075 12.7336L11.3467 16.3086C10.926 16.698 10.2759 16.696 9.85767 16.304C9.39453 15.8696 9.39771 15.1335 9.8645 14.7036L12.8 12Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-call__bg"></div>
+  </div>
+  
+
+<script type="text/javascript" src="./js/bundle.f8846b52c14ea98485e0.js"></script></body>
+
+</html>
