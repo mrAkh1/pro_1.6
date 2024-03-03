@@ -1,0 +1,88 @@
+.header {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-4;
+        align-items: center;
+        padding: 18px 16px 18px 16px;
+
+        @media (min-width: $tabletWidth) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        @media (min-width: $desktopWidth) {
+            display: none;
+        }
+    }
+
+    &__logo-link {
+        margin-left: 16px;
+        margin-right: auto;
+
+        @media (min-width: $tabletWidth) {
+            margin-left: 42px;
+        }
+    }
+
+    &__contact-item {
+        list-style-type: none;
+        margin-right: 16px;
+    }
+
+    &__logo-img {
+        display: block;
+
+        @media (min-width: 360px) {
+            width: 103px;
+        }
+    }
+
+    &__service {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+    }
+
+    &__service-btn--space {
+        margin-right: 16px;
+    }
+
+    &__service::before {
+        display: block;
+        content: '';
+        width: 2px;
+        height: 32px;
+        background-color: $color-3;
+        border-radius: 1px;
+        position: absolute;
+        left: -22px;
+        bottom: 4px;
+    }
+
+    &__contact {
+        display: none;
+
+        @media (min-width: $tabletWidth) {
+            display: flex;
+            margin-right: 26px;
+            margin-left: auto;
+            align-items: center;
+            list-style-type: none;
+        }
+    }
+
+    &__btn-burger::before {
+        @media (min-width: $tabletWidth) {
+            display: block;
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-color: $color-3;
+            border-radius: 1px;
+            position: absolute;
+            left: 60px;
+            bottom: 4px;
+        }
+    }
+}

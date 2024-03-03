@@ -1,0 +1,187 @@
+.technic-slider {
+    position: relative;
+    padding-top: 16px;
+    background: $color-7;
+
+
+    @media (min-width: $desktopWidth) {
+        padding-top: 24px;
+    }
+
+
+    &__header {
+        color: $color-2;
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        text-transform: uppercase;
+        border-top: rgb(217, 255, 245) solid 1px;
+        padding-top: 8px;
+        padding-bottom: 16px;
+        background-image: linear-gradient(to right,
+                rgb(248, 248, 248),
+                rgb(255, 255, 255));
+
+        @media (min-width: $desktopWidth) {
+            padding-top: 16px;
+        }
+    }
+
+    &__item {
+        max-width: 240px;
+
+        @media (min-width: $tabletWidth) {
+            min-width: 224px;
+            max-width: none;
+        }
+
+        @media (min-width: $desktopWidth) {
+            min-width: 221px;
+            max-width: none;
+        }
+
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        border: $color-3 1px solid;
+        border-radius: 6px;
+        align-items: flex-start;
+        height: 160px;
+        padding: 16px;
+        transition: opacity 0.2s ease-in;
+        background: white;
+    }
+
+    &__link:hover {
+        opacity: 70%;
+    }
+
+    &__ico {
+        max-width: 40px;
+        max-height: 40px;
+        align-self: flex-end;
+    }
+
+
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 160px;
+        right: 0px;
+        top: 15px;
+        background: linear-gradient(270deg,
+                rgb(248, 248, 248) 16.836%,
+                rgba(248, 248, 248, 0) 100%);
+        z-index: 1;
+    }
+
+    &__name {
+        color: $color-1;
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__list {
+        @media (min-width: $tabletWidth) {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 16px 24px;
+            height: 160px;
+            overflow-y: hidden;
+        }
+
+        @media (min-width: $desktopWidth) {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 16px 32px;
+        }
+    }
+
+
+    &__list--maxHeight {
+        @media (min-width: $tabletWidth) {
+            height: auto;
+        }
+    }
+
+
+
+
+    &__more--open {
+        @media (min-width: $tabletWidth) {
+            position: relative;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            background: transparent;
+            cursor: pointer;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+
+    &__more--close {
+        @media (min-width: $tabletWidth) {
+            position: relative;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            background: transparent;
+            cursor: pointer;
+            transition: opacity 0.2s ease-in;
+        }
+    }
+
+    &__more--open:hover {
+        @media (min-width: $tabletWidth) {
+            opacity: 70%;
+        }
+    }
+
+    &__more--close:hover {
+        @media (min-width: $tabletWidth) {
+            opacity: 70%;
+        }
+    }
+
+    &__more--descr {
+        @media (min-width: $tabletWidth) {
+            position: absolute;
+            top: 1px;
+            left: 33px;
+            padding-left: 0px;
+            font-style: normal;
+            white-space: nowrap;
+            color: $color-1;
+            font-family: TT Lakes;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            text-align: left;
+        }
+    }
+
+    &__btn {
+        display: none;
+
+        @media (min-width: $tabletWidth) {
+            display: block;
+        }
+    }
+
+    &__more--hidden {
+        @media (min-width: $tabletWidth) {
+            display: none;
+        }
+    }
+
+}

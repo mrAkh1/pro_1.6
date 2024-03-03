@@ -1,0 +1,57 @@
+.footer {
+    color: $color-2;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    &__politic {
+        color: inherit;
+        display: block;
+        padding-top: 16px;
+
+        @media (min-width: $tabletWidth) {
+            text-align: center;
+            padding-top: 16px;
+            padding: 0;
+        }
+
+    }
+
+    &__info {
+        padding-top: 16px;
+        padding-bottom: 17px;
+
+        @media (min-width: $tabletWidth) {
+            text-align: right;
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+        background: $color-7;
+
+        @media (min-width: $tabletWidth) {
+            border-top: rgb(217, 255, 245) solid 1px;
+            padding-top: 32px;
+            padding-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    }
+
+    .footer__copyright {
+        @media (min-width: $tabletWidth) {
+            text-align: left;
+            padding: 0;
+        }
+    }
+
+
+
+}
