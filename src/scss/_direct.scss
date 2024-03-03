@@ -1,0 +1,103 @@
+body,
+*,
+*::before,
+*::after {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'TT Lakes';
+    border: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    position: relative;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'TT Lakes';
+    transition: opacity 0.2s ease-in;
+}
+
+.button:hover {
+    opacity: 75%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.--container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: $tabletWidth) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @media (min-width: $desktopWidth) {
+        padding-left: 32px;
+        padding-right: 46px;
+    }
+}
+
+.main__container {
+    background-color: $color-7;
+
+    @media (min-width: $desktopWidth) {
+        margin: auto;
+    }
+}
+
+.head-container {
+    @media (min-width: $desktopWidth) {
+        padding-left: 306px;
+    }
+}
+
+.swiper .swiper-pagination {
+    position: static;
+    line-height: 44px;
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px !important;
+}
+
+svg {
+    display: block;
+}
+
+.swiper-pagination {
+    @media (min-width: $desktopWidth) {
+        display: none;
+    }
+}
